@@ -1,0 +1,140 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "random facts",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "GetRemoteDataIntent",
+          "slots": [],
+          "samples": [
+            "another",
+            "a fact",
+            "give me another fact",
+            "another fact",
+            "i want a fact",
+            "random fact",
+            "tell me a fact",
+            "say a random fact",
+            "give me a fact"
+          ]
+        },
+        {
+          "name": "GetRemoteDataCategoryIntent",
+          "slots": [
+            {
+              "name": "category",
+              "type": "category"
+            }
+          ],
+          "samples": [
+            "a random fact about {category}",
+            "{category}",
+            "tell me a fact about {category}",
+            "i want a fact about {category}"
+          ]
+        },
+        {
+          "name": "GetCategoriesIntent",
+          "slots": [],
+          "samples": [
+            "what categories are available",
+            "give me the categories",
+            "show me the categories",
+            "what are the categories"
+          ]
+        },
+        {
+          "name": "GetRemoteNewsIntent",
+          "slots": [],
+          "samples": [
+            "Give me the news",
+            "I want the news please",
+            "news of today",
+            "news"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "20",
+              "name": {
+                "value": "Mythology"
+              }
+            },
+            {
+              "id": "21",
+              "name": {
+                "value": "Sports"
+              }
+            },
+            {
+              "id": "22",
+              "name": {
+                "value": "Geography"
+              }
+            },
+            {
+              "id": "23",
+              "name": {
+                "value": "History"
+              }
+            },
+            {
+              "id": "24",
+              "name": {
+                "value": "Politics"
+              }
+            },
+            {
+              "id": "27",
+              "name": {
+                "value": "Animals"
+              }
+            },
+            {
+              "id": "28",
+              "name": {
+                "value": "Vehicles"
+              }
+            },
+            {
+              "id": "9",
+              "name": {
+                "value": "General Knowledge"
+              }
+            }
+          ],
+          "name": "category"
+        }
+      ],
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      }
+    }
+  },
+  "version": "25"
+}
